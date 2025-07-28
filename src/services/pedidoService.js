@@ -1,11 +1,11 @@
-import { db } from "../database/conexion.js";
+import { db, client } from "../database/conexion.js";
 import { Pizza } from "../models/pizzaModel.js";
 import { Ingrediente } from "../models/ingredienteModel.js";
 import { Pedido } from "../models/pedidoModel.js";
 import { Repartidor } from "../models/repartidorModel.js";
 
 export async function realizarPedido(clienteId, pizzaIds) {
-  const session = db.client.startSession();
+  const session = client.startSession();
 
   try {
     await session.withTransaction(async () => {

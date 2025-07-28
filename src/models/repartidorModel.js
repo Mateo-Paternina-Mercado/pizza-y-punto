@@ -1,0 +1,1 @@
+export const Repartidor = (db) => db.collection("repartidores");
