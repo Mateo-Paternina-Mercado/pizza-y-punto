@@ -62,8 +62,8 @@ pizza-y-punto/
 │   ├── services/
 │   │   ├── pedidoService.js      # Registro y validación de pedidos
 │   │   └── repartidorService.js  # Gestión de repartidores
-│   ├── menus/
-│   │   └── menuPrincipal.js      # Interfaz CLI con Inquirer
+│   ├── cli/
+│   │   └── menu.js      # Interfaz CLI con Inquirer
 │   └── seed/
 │       └── datosIniciales.js     # Datos de prueba (clientes, pizzas, etc.)
 ├── .env
